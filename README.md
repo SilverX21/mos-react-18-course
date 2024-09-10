@@ -55,19 +55,25 @@ git push -u origin main`
 
 ## Setting up vercel for the project and deploying it to production
 1- Run the commands in your project directory
+
 2- after this, let's go to vercel and login
+
 3- in my project, run the command `npm i -g vercel`
+
 4- after vercel is installed, we must run this command to push this project to vercel: `vercel`
-	- set up and deploy “C:\Cursos\game-hub”? -> carregar enter (Yes)
-	- Which scope do you want to deploy to? (Use arrow keys)
-		> Nuno's projects  -> carregar enter (Yes)
-	- Link to existing project? -> enter (No)
-	- What’s your project’s name? -> enter (aceita o default que aparecer na consola)
-	- In which directory is your code located? -> enter (aceita o default que aparecer na consola)
-	- Want to modify these settings? -> enter (No)
+
+- set up and deploy “C:\Cursos\game-hub”? -> carregar enter (Yes)
+- Which scope do you want to deploy to? (Use arrow keys)
+	> Nuno's projects  -> carregar enter (Yes)
+- Link to existing project? -> enter (No)
+- What’s your project’s name? -> enter (aceita o default que aparecer na consola)
+- In which directory is your code located? -> enter (aceita o default que aparecer na consola)
+- Want to modify these settings? -> enter (No)
+
 5- After we setup all of these, it will appear a link for production:
-	- https://game-egx90mylu-nunos-projects-70cb57cf.vercel.app
-	NOTE: the name could be different because there could be any other project in the world that could have the same name :)
+
+- https://game-egx90mylu-nunos-projects-70cb57cf.vercel.app
+NOTE: the name could be different because there could be any other project in the world that could have the same name :)
 	
 ## Linking the project in GitHub to Vercel
 1- Go the your dashboard in vercel
