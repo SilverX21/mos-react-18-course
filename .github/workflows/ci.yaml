@@ -20,15 +20,15 @@ jobs:
       VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
 
     steps:
-      # Checkout the code from the repository
+      # Checkout the code from the repository (will automatically use Node.js 20 after March 2024)
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Set up Node.js with version 22.4.1
+      # Set up Node.js with version 20.4.1 (or a compatible 20.x version)
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "22.4.1" # Set to the version you're using
+          node-version: "20" # Explicitly setting Node.js 20.x
 
       # Install dependencies
       - name: Install dependencies
