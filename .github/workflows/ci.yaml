@@ -1,6 +1,5 @@
 name: CI for React Vite App
 
-# Run on push and pull requests to the main branch
 on:
   push:
     branches:
@@ -9,36 +8,22 @@ on:
     branches:
       - main
 
-# Define the jobs that will run in the workflow
 jobs:
   build:
-    # The environment where the job will run
     runs-on: ubuntu-latest
 
-    # Set up environment variables, including the API key from GitHub Secrets
     env:
       VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
 
     steps:
-      # Checkout the code from the repository (will automatically use Node.js 20 after March 2024)
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Set up Node.js with version 20.4.1 (or a compatible 20.x version)
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "20" # Explicitly setting Node.js 20.x
-
-      # Install dependencies
+      # Specify the correct working directory where package.json is located
       - name: Install dependencies
+        working-directory: ./game-hub # <--- Replace this with the correct path
         run: npm install
 
-      # Run the build process
       - name: Build project
+        working-directory: ./game-hub # <--- Replace this with the correct path
         run: npm run build
-
-      # (Optional) Run a preview to test the build
-      # Uncomment if you'd like to run the Vite preview server during the CI process
-      # - name: Preview build
-      #   run: npm run preview
