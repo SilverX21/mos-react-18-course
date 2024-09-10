@@ -1,0 +1,9 @@
+/*para este tipo de módulos de CSS, devemos usar camel case*/
+.listGroup {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  background-color: chartreuse;
+}
