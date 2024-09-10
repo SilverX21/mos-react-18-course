@@ -72,7 +72,8 @@ git push -u origin main`
 
 5- After we setup all of these, it will appear a link for production:
 
-- https://game-egx90mylu-nunos-projects-70cb57cf.vercel.app
+- This is my final project: https://game-egx90mylu-nunos-projects-70cb57cf.vercel.app
+
 NOTE: the name could be different because there could be any other project in the world that could have the same name :)
 	
 ## Linking the project in GitHub to Vercel
