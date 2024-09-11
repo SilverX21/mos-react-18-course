@@ -4,9 +4,13 @@ on:
   push:
     branches:
       - main
+    paths:
+      - game-hub/**
   pull_request:
     branches:
       - main
+    paths:
+      - game-hub/**
 
 jobs:
   build:
@@ -21,9 +25,9 @@ jobs:
 
       # Specify the correct working directory where package.json is located
       - name: Install dependencies
-        working-directory: ./game-hub # <--- Replace this with the correct path
+        working-directory: ./game-hub
         run: npm install
 
       - name: Build project
-        working-directory: ./game-hub # <--- Replace this with the correct path
+        working-directory: ./game-hub
         run: npm run build
