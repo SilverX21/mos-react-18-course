@@ -16,3 +16,11 @@ You can find the course at https://codewithmosh.com
 ## Packages used in this solution
 
 Below there's a list of packages used in this project:
+
+- React Query (version 4.28) `npm i @tanstack/react-query@4.28`
+- React Query Devtools (version 4.28) `npm i @tanstack/react-query-devtools@4.28`
+
+
+## What is React Query?
+
+React Query is a powerful library for managing data fetching and caching in React applications
